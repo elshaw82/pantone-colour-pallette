@@ -1,19 +1,21 @@
 const colourCards = document.querySelectorAll(".card")
 
-const body = document.querySelector("body");
-
 function gray(){
-    document.body.classList.toggle('gray');
+    document.body.classList.remove('pink', 'yellow', 'blue');
+    document.body.classList.add('gray');
 }
 
 function pink(){
-    document.body.classList.toggle('pink');
+    document.body.classList.remove('gray', 'yellow', 'blue');
+    document.body.classList.add('pink');
 }
 
 function blue(){
-    document.body.classList.toggle('blue');
+    document.body.classList.remove('pink', 'yellow', 'gray');
+    document.body.classList.add('blue');
 }
 
 function yellow(){
-    document.body.classList.toggle('yellow');
+    document.body.classList.remove('pink', 'gray', 'blue');
+    document.body.classList.add('yellow');
 }
